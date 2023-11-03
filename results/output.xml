@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231103 09:38:15.905" rpa="false" schemaversion="4">
+<suite id="s1" name="Walkdog" source="C:\QAx\projects\walkdog">
+<suite id="s1-s1" name="Home" source="C:\QAx\projects\walkdog\home.robot">
+<test id="s1-s1-t1" name="Webapp deve estar online" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://walkdog.vercel.app</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231103 09:38:17.091" level="INFO">Opening browser 'edge' to base url 'https://walkdog.vercel.app'.</msg>
+<status status="PASS" starttime="20231103 09:38:17.087" endtime="20231103 09:38:25.301"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Walkdog by Papito</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20231103 09:38:25.313" level="INFO">Page title is 'Walkdog by Papito'.</msg>
+<status status="PASS" starttime="20231103 09:38:25.302" endtime="20231103 09:38:25.314"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Cuidado e diversão em cada passo</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231103 09:38:25.337" level="INFO">Current page contains text 'Cuidado e diversão em cada passo'.</msg>
+<status status="PASS" starttime="20231103 09:38:25.314" endtime="20231103 09:38:25.338"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231103 09:38:30.339" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231103 09:38:25.338" endtime="20231103 09:38:30.339"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231103 09:38:30.340" endtime="20231103 09:38:32.785"/>
+</kw>
+<status status="PASS" starttime="20231103 09:38:17.087" endtime="20231103 09:38:32.785"/>
+</test>
+<doc>Suíte de testes da aplicação WalkDog</doc>
+<status status="PASS" starttime="20231103 09:38:16.059" endtime="20231103 09:38:32.792"/>
+</suite>
+<status status="PASS" starttime="20231103 09:38:15.912" endtime="20231103 09:38:32.796"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Walkdog">Walkdog</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Home">Walkdog.Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
